@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>云境香藏｜非遗藏香数字化体验平台</title>
+  <meta name="description" content="云境香藏：融合非遗藏香、数字定制、香文化与在线购买的一体化体验网站。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="云境香藏首页">
+        <div class="brand-mark">香</div>
+        <div>
+          <div class="brand-cn">云境香藏</div>
+          <div class="brand-en">AI Incense · Tibetan Heritage</div>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false">☰</button>
+
+      <nav class="main-nav">
+        <a href="index.html">首页</a>
+        <a href="studio.html" class="active">3D定制</a>
+        <a href="culture.html">香文化</a>
+        <a href="member.html">会员中心</a>
+        <a href="contact.html">联系我们</a>
+        <a class="nav-cta" href="shop.html">在线购买</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="studio section" id="studio">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">3D定制</span>
+          <h2>数字藏香工坊</h2>
+          <p>以“香材选择 + 视觉外观 + 器型预览”为核心，探索数字化的定制体验。</p>
+        </div>
+
+        <div class="studio-layout">
+          
+          <div class="config-sidebar">
+            
+            <div class="ingredients-panel card">
+              <div class="panel-title-row">
+                <h3>基于《四部医典》香料选择</h3>
+                <span class="pill">草本配伍</span>
+              </div>
+              <div class="ingredient-grid">
+                <article class="ingredient-item active">
+                  <img src="ingredient-musk.jpg" alt="麝香香材展示图" onerror="this.style.display='none'" />
+                  <div>
+                    <h4>麝香</h4>
+                    <p>暖香、静意、适合空间氛围</p>
+                  </div>
+                </article>
+                <article class="ingredient-item">
+                  <img src="ingredient-agarwood.jpg" alt="沉香香材展示图" onerror="this.style.display='none'" />
+                  <div>
+                    <h4>沉香</h4>
+                    <p>木质醇厚，适合高端场景</p>
+                  </div>
+                </article>
+                <article class="ingredient-item">
+                  <img src="ingredient-sandalwood.jpg" alt="檀香香材展示图" onerror="this.style.display='none'" />
+                  <div>
+                    <h4>檀香</h4>
+                    <p>清润柔和，适合日常家用</p>
+                  </div>
+                </article>
+                <article class="ingredient-item">
+                  <img src="ingredient-saffron.jpg" alt="藏红花香材展示图" onerror="this.style.display='none'" />
+                  <div>
+                    <h4>藏红花</h4>
+                    <p>色彩鲜明，增强文化记忆</p>
+                  </div>
+                </article>
+              </div>
+              <div class="formula-box">
+                <div class="formula-row"><span>功效方向</span><strong>安神 · 净室 · 日常香氛</strong></div>
+                <div class="formula-row"><span>推荐搭配</span><strong>沉香 / 檀香 / 藏红花</strong></div>
+                <div class="formula-row"><span>用户标签</span><strong>初次用香 / 居家场景</strong></div>
+              </div>
+            </div>
+
+            <div class="preview-panel card">
+              <div class="panel-title-row">
+                <h3>3D建模预览区</h3>
+                <span class="pill">自由调整</span>
+              </div>
+              <div class="preview-stage" style="min-height: 480px;">
+                <img src="incense-3d-main.jpg" alt="藏式定制预览图" class="main-product" id="mainPreview" />
+              </div>
+              <div class="control-strip">
+                <div class="control">
+                  <label>器型精致度</label>
+                  <input type="range" min="1" max="100" value="68" />
+                </div>
+                <div class="control">
+                  <label>香材浓度</label>
+                  <input type="range" min="1" max="100" value="54" />
+                </div>
+              </div>
+              <div class="action-row">
+                <button class="icon-btn" type="button">↺</button>
+                <button class="icon-btn" type="button">⟳</button>
+                <button class="icon-btn" type="button">✧</button>
+                <a href="shop.html" class="btn btn-primary full">立即下单</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="appearance-panel card" style="position: sticky; top: 100px;">
+            <div class="panel-title-row">
+              <h3>专属视觉风格定制</h3>
+              <span class="pill">外观设计</span>
+            </div>
+            <p style="color: var(--muted); font-size: 14px; margin-top: -6px; margin-bottom: 20px;">
+              选择 IP 联名、星座或 MBTI 人格，打造极具辨识度与文化内核的专属外观。点击即可在左侧 3D 舞台查看效果。
+            </p>
+            
+            <div class="theme-tabs">
+              <button class="theme-tab active" type="button" data-tab="ip">🌿 IP 联动</button>
+              <button class="theme-tab" type="button" data-tab="zodiac">✨ 十二星座</button>
+              <button class="theme-tab" type="button" data-tab="mbti">🧠 MBTI</button>
+            </div>
+
+            <div class="theme-grid-container">
+              <div class="theme-grid" id="ipGrid" style="grid-template-columns: 1fr;"></div>
+              
+              <div class="theme-grid hidden" id="zodiacGrid"></div>
+              <div class="theme-grid hidden" id="mbtiGrid"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <div class="brand-cn">云境香藏</div>
+        <p>非遗藏香数字化体验与文旅融合展示站</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="member.html">隐私</a>
+        <a href="contact.html">联系我们</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  
+  <script>
+    // IP 联动专属数据：重点描述白术医者背景与产品的羁绊
+    const ipList = [
+      { 
+        name: "白术 · 不卜庐", 
+        file: "baizhu", 
+        desc: "<span style='display:block; margin-bottom:8px;'><strong style='color:var(--primary-dark); font-size:16px;'>医理同源，悬壶济世：</strong></span>作为璃月名医，白术精通传统草药配伍；这与本平台基于《四部医典》的藏香医理完美契合。<br><br>我们提取其代表性的<strong>「清心定志」</strong>元素，将中草药疗愈感深度融入藏香定制，为您打造极具文化底蕴与安神功效的专属联名款。"
+      }
+    ];
+
+    const zodiacList = [
+      { name: "白羊座", file: "baiyang", desc: "热烈、直接，极具明亮感。" },
+      { name: "金牛座", file: "jinniu", desc: "沉稳耐看，偏温润与质感。" },
+      { name: "双子座", file: "shuangzi", desc: "轻盈灵动，具有新鲜感。" },
+      { name: "巨蟹座", file: "juxie", desc: "柔和包裹，偏温暖陪伴。" },
+      { name: "狮子座", file: "shizi", desc: "极具存在感与舞台气场。" },
+      { name: "处女座", file: "chunv", desc: "简洁细致，秩序感更强。" },
+      { name: "天秤座", file: "tiancheng", desc: "轻盈优雅，整体更柔和。" },
+      { name: "天蝎座", file: "tianxie", desc: "深邃神秘，情绪张力强。" },
+      { name: "射手座", file: "sheshou", desc: "自由开阔，偏活力表达。" },
+      { name: "摩羯座", file: "mojie", desc: "克制稳重，更显高级感。" },
+      { name: "水瓶座", file: "shuiping", desc: "清冷先锋，辨识度极强。" },
+      { name: "双鱼座", file: "shuangyu", desc: "柔和梦幻，偏艺术氛围。" }
+    ];
+
+    const mbtiList = [
+      { name: "INTJ", file: "intj", desc: "理性锋利，整体清晰克制。" },
+      { name: "INTP", file: "intp", desc: "偏向思辨与探索气质。" },
+      { name: "ENTJ", file: "entj", desc: "利落明确，更具结构感。" },
+      { name: "ENTP", file: "entp", desc: "灵活跳跃，很有创意感。" },
+      { name: "INFJ", file: "infj", desc: "细腻克制，带理想气息。" },
+      { name: "INFP", file: "infp", desc: "柔和诗意，情绪感明显。" },
+      { name: "ENFJ", file: "enfj", desc: "温暖明亮，极具亲和力。" },
+      { name: "ENFP", file: "enfp", desc: "自由活泼，感染力极强。" },
+      { name: "ISTJ", file: "istj", desc: "规整沉稳，秩序感极强。" },
+      { name: "ISFJ", file: "isfj", desc: "柔和耐看，更显温柔。" },
+      { name: "ESTJ", file: "estj", desc: "利落直接，轮廓更明确。" },
+      { name: "ESFJ", file: "esfj", desc: "明朗友好，更有亲近感。" },
+      { name: "ISTP", file: "istp", desc: "冷静克制，简练且实用。" },
+      { name: "ISFP", file: "isfp", desc: "柔软自然，很有艺术感。" },
+      { name: "ESTP", file: "estp", desc: "直接干脆，非常有活力。" },
+      { name: "ESFP", file: "esfp", desc: "明亮鲜活，极具吸引力。" }
+    ];
+
+    // 动态生成卡片（为 IP 联动做了大尺寸、大字体特殊处理）
+    function createThemeCard(item, type, thumbImage, finalImage) {
+      if (type === 'ip') {
+        return `
+          <article class="theme-item active" data-type="ip" data-name="${item.name}" data-final="${finalImage}" style="cursor: pointer; box-shadow: 0 8px 30px rgba(110,70,45,0.12); border-color: var(--primary);">
+            <div class="theme-item-img" style="aspect-ratio: auto; height: 380px;">
+              <img src="${thumbImage}" alt="${item.name}外观" style="object-position: center top;" onerror="this.style.display='none'">
+            </div>
+            <div class="theme-item-body" style="padding: 26px 24px; text-align: left; background: rgba(110,70,45,0.03);">
+              <h4 style="font-size: 24px; margin-bottom: 14px; font-family: 'Noto Serif SC', serif; color: var(--primary-dark);">🌿 原神专属联名：${item.name}</h4>
+              <p style="font-size: 15px; line-height: 1.8; color: var(--text); -webkit-line-clamp: unset; display: block; overflow: visible;">${item.desc}</p>
+            </div>
+          </article>
+        `;
+      }
+
+      // 普通星座与 MBTI 卡片样式
+      let icon = type === 'zodiac' ? '✨ ' : '🧠 ';
+      return `
+        <article class="theme-item" data-type="${type}" data-name="${item.name}" data-final="${finalImage}">
+          <div class="theme-item-img">
+            <img src="${thumbImage}" alt="${item.name}外观" onerror="this.style.display='none'">
+          </div>
+          <div class="theme-item-body">
+            <h4>${icon}${item.name}</h4>
+            <p>${item.desc}</p>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderThemes() {
+      // 渲染大尺寸白术专属卡片
+      document.getElementById('ipGrid').innerHTML = ipList.map(item => {
+        return createThemeCard(item, 'ip', `${item.file}.jpg`, `${item.file}.jpg`);
+      }).join('');
+
+      document.getElementById('zodiacGrid').innerHTML = zodiacList.map(item => {
+        return createThemeCard(item, 'zodiac', `${item.file}1.jpg`, `${item.file}.jpg`);
+      }).join('');
+
+      document.getElementById('mbtiGrid').innerHTML = mbtiList.map(item => {
+        return createThemeCard(item, 'mbti', `${item.file}1.jpg`, `${item.file}.png`);
+      }).join('');
+
+      bindThemeEvents();
+    }
+
+    function initTabs() {
+      const tabs = document.querySelectorAll('.theme-tab');
+      const ipGrid = document.getElementById('ipGrid');
+      const zodiacGrid = document.getElementById('zodiacGrid');
+      const mbtiGrid = document.getElementById('mbtiGrid');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function () {
+          tabs.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+
+          ipGrid.classList.add('hidden');
+          zodiacGrid.classList.add('hidden');
+          mbtiGrid.classList.add('hidden');
+
+          const target = this.getAttribute('data-tab');
+          if (target === 'ip') ipGrid.classList.remove('hidden');
+          if (target === 'zodiac') zodiacGrid.classList.remove('hidden');
+          if (target === 'mbti') mbtiGrid.classList.remove('hidden');
+        });
+      });
+    }
+
+    function bindThemeEvents() {
+      const mainPreview = document.getElementById('mainPreview');
+
+      document.querySelectorAll('.theme-item').forEach(card => {
+        card.addEventListener('click', function () {
+          // 清除所有卡片的 active 状态，除了属于不同网格的卡片可能受影响，这里用全局清除没问题
+          document.querySelectorAll('.theme-item').forEach(c => c.classList.remove('active'));
+          this.classList.add('active');
+          
+          // 获取绑定的最终效果图并更换左侧的 3D 展示区
+          const finalImage = this.getAttribute('data-final');
+          mainPreview.style.opacity = '0';
+          setTimeout(() => {
+            mainPreview.src = finalImage;
+            mainPreview.style.opacity = '1';
+          }, 200);
+        });
+      });
+
+      document.querySelectorAll('.ingredient-item').forEach(item => {
+        item.addEventListener('click', function () {
+          document.querySelectorAll('.ingredient-item').forEach(i => i.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderThemes();
+      initTabs();
+    });
+  </script>
+</body>
+</html>
